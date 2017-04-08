@@ -6,6 +6,8 @@ using RedditSharp.Extensions;
 
 namespace RedditSharp
 {
+
+    
     public enum Sorting
     {
         Relevance,
@@ -26,6 +28,11 @@ namespace RedditSharp
 
     public class Listing<T> : IEnumerable<T> where T : Thing
     {
+        public void ThisIsATest()
+        {
+            var test = new object();
+        }
+
         /// <summary>
         /// Gets the default number of listings returned per request
         /// </summary>
